@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">The_Gallery</string>
+        <string name="skyline_summary">
+        Philadelphia Skyline, Philadelphia, PA
+    </string>
+     <string name="hall_summary">
+        Independence Hall, Philadelphia, PA
+    </string>
+        <string name="theater_summary">
+        Tower Theater, Upper Darby, PA
+    </string>
+    <string name="station_summary">
+        30th Street Station, Philadelphia, PA
+    </string>
+    <string name="summary3">
+        Linocut - 18 x 24 in. | 45.72 x 60.96 cm
+    </string>
+
+</resources>
