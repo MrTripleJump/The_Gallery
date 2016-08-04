@@ -12,8 +12,18 @@
     <string name="station_summary">
         30th Street Station, Philadelphia, PA
     </string>
-    <string name="summary3">
+    <string name="summary1">
         Linocut - 18 x 24 in. | 45.72 x 60.96 cm
+    </string>
+    <string name="freehand_title1">
+        City of Brotherly Love</string>
+    <string name="freehand_title2">
+        Capital City</string>
+    <string name="freehand_title3">
+        Empire City
+    </string>
+    <string name="summary2">
+        Sharpie on paper - 8.5 x 11 in. | 21.59 x 27.94 cm
     </string>
 
 </resources>
