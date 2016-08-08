@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
 
     <ImageView
@@ -24,6 +25,8 @@
             android:layout_height="50dp"
             android:text="Christopher Williams"
             android:textSize="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
             android:layout_below="@+id/imageView"
             android:gravity="center_horizontal"/>
 
@@ -31,6 +34,7 @@
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:text="New Castle, DE"
+            android:textColor="#000000"
             android:textSize="15dp"
             android:layout_marginTop="15dp"
             android:layout_below="@+id/imageView"
@@ -57,11 +61,14 @@
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:text="Demitrius Ramirez"
+            android:textColor="#000000"
             android:textSize="15dp"
+            android:textStyle="bold"
             android:gravity="center_horizontal"/>
         <TextView
             android:layout_width="170dp"
             android:layout_height="50dp"
+            android:textColor="#000000"
             android:text="Dover, DE"
             android:textSize="15dp"
             android:layout_marginTop="15dp"
