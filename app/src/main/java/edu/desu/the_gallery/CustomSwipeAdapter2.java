@@ -13,31 +13,24 @@ import android.widget.TextView;
 /**
  * Created by dsuappacademy on 8/2/16.
  */
-public class CustomSwipeAdapter extends PagerAdapter {
+public class CustomSwipeAdapter2 extends PagerAdapter {
     Context ctx;
     private int[] image_resource;
     private int[] caption;
     private int[] caption1;
     private LayoutInflater layoutInflater;
-    private int[] price;
-    public CustomSwipeAdapter(Context ctx,int[] image_resource, int[] caption, int[] caption1, int[] price)
+    private int[] caption12;
+
+    public CustomSwipeAdapter2(Context ctx,int[] image_resource, int[] caption, int[] caption1, int[]caption12)
     {
         this.caption = caption;
         this.caption1 = caption1;
-        this.price = price;
+        this.caption12 = caption12;
         this.ctx = ctx;
         this.image_resource = image_resource;
 
     }
 
-    public CustomSwipeAdapter(Context ctx,int[] image_resource, int[] caption, int[] caption1)
-    {
-        this.caption = caption;
-        this.caption1 = caption1;
-        this.ctx = ctx;
-        this.image_resource = image_resource;
-
-    }
     @Override
     public int getCount() {
         return image_resource.length;
@@ -54,7 +47,6 @@ public class CustomSwipeAdapter extends PagerAdapter {
         TextView c;
         TextView cc;
         TextView ccc;
-        TextView cccc;
 
         layoutInflater = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View item_view = layoutInflater.inflate(R.layout.slide_layout,container,false);
@@ -65,11 +57,8 @@ public class CustomSwipeAdapter extends PagerAdapter {
         cc = (TextView) item_view.findViewById(R.id.caption1);
         cc.setText(caption1[position]);
 
-        if(price != null){
-            cccc =(TextView) item_view.findViewById(R.id.caption12);
-            cccc.setText(price[position]);
-        }
-
+        ccc = (TextView) item_view.findViewById(R.id.caption12);
+        ccc.setText(caption12[position]);
 
 
         ImageView imageView = (ImageView)item_view.findViewById(R.id.image_view);

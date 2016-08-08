@@ -20,8 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private int[] image_resource;
     private int[] caption;
     private int[] caption1;
-    private ShareActionProvider mShareActionProvider;
-
+    private int[] price;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,42 +29,40 @@ public class MainActivity extends AppCompatActivity {
         image_resource = new int[] {R.drawable.skyline, R.drawable.independence2, R.drawable.theater, R.drawable.trainstation};
         caption = new int[] {R.string.skyline_summary, R.string.hall_summary, R.string.theater_summary, R.string.station_summary};
         caption1 = new int[] {R.string.summary1, R.string.summary1, R.string.summary1, R.string.summary1};
+        price = new int[]{R.string.price, R.string.price, R.string.price, R.string.price};
+
 
         setContentView(R.layout.activity_main);
         viewPager = (ViewPager) findViewById(R.id.view_pager);
-        adapter = new CustomSwipeAdapter(this, caption, image_resource, caption1);
-        viewPager.setAdapter(adapter);}
+        adapter = new CustomSwipeAdapter(this, image_resource, caption, caption1, price);
+        viewPager.setAdapter(adapter);
+    }
 
             public void contact(View target) {
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
-                intent.setData(Uri.parse("mailto:"));
+                intent.setData(Uri.parse("mailto:"+"mrtj48@gmail.com"));
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Im interested in your work ");
                 if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
                 }// Do stuff
             }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate menu resource file.
-        getMenuInflater().inflate(R.menu.share, menu);
-
-        // Locate MenuItem with ShareActionProvider
-        MenuItem item = menu.findItem(R.id.menu_item_share);
-
-        // Fetch and store ShareActionProvider
-        mShareActionProvider = (ShareActionProvider) item.getActionProvider();
-
-        // Return true to display menu
-        return true;
+    public void share(View target) {
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "Hey check out this artwork. I really think you would like it");
+        sendIntent.setType("text/plain");
+        startActivity(sendIntent);
     }
 
-    // Call to update the share intent
-    private void setShareIntent(Intent shareIntent) {
-        if (mShareActionProvider != null) {
-            mShareActionProvider.setShareIntent(shareIntent);
-        }
+    public void website (View target){
+        Intent website = new Intent(Intent.ACTION_VIEW, Uri.parse("https://webflow.com/design/thegallery"));
+
+        startActivity(website);
     }
 
-    }
+
+
+}
+
 

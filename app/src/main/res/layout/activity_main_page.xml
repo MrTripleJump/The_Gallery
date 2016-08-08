@@ -5,23 +5,67 @@
 
 
     <ImageView
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:src="@drawable/mainpagepic"
         android:id="@+id/imageView"
         android:layout_gravity="right|bottom"
+        android:layout_marginTop="34dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="31dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="61dp" />
+        android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Christopher Williams"
-        android:layout_below="@+id/imageView"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
+    <FrameLayout
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageView">
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="Christopher Williams"
+            android:textSize="15dp"
+            android:layout_below="@+id/imageView"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="New Castle, DE"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/imageView"
+            android:gravity="center_horizontal"/>
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:src="@drawable/migo"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:id="@+id/imageView2" />
+    <FrameLayout
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imageView2">
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="Demitrius Ramirez"
+            android:textSize="15dp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="Dover, DE"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"/>
+    </FrameLayout>
 
 </RelativeLayout>

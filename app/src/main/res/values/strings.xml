@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">The_Gallery</string>
+    <string name="app_name">The Gallery</string>
         <string name="skyline_summary">
         Philadelphia Skyline, Philadelphia, PA
     </string>
@@ -25,5 +25,63 @@
     <string name="summary2">
         Sharpie on paper - 8.5 x 11 in. | 21.59 x 27.94 cm
     </string>
+    <string name="price">
+        $60 w/frame | $75 w/o frame
+    </string>
+
+
+    <string name="photo_title1">
+        "Smoke Sky"
+    </string>
+    <string name="photo_sum1">
+        Model: Paige
+    </string>
+    <string name="MUA_sum1">
+        Make-up Artist: Ayana Glover
+    </string>
+    
+    <string name="photo_title2">
+        "Lil red corvet"
+    </string>
+    <string name="photo_sum2">
+        Model: Zayna
+    </string>
+    <string name="MUA_sum2">
+        Make-up Artist: Ayana Glover
+    </string>
+
+    <string name="photo_title3">
+        "Color Pop"
+    </string>
+    <string name="photo_sum3">
+        Model: Rihanna
+    </string>
+
+    <string name="MUA_title3">
+        Make-up Artist: Herself
+    </string>
+
+     <string name="photo_title4">
+        "Spring Time Bliss"
+    </string>
+    <string name="photo_sum4">
+        Model: Zayna
+    </string>
+
+    <string name="MUA_title4">
+        Make-up Artist: Herself
+    </string>
+
+     <string name="photo_title5">
+        "We Are Strong"
+    </string>
+    <string name="photo_sum5">
+        Model: Ayana Glover
+    </string>
+
+    <string name="MUA_title5">
+        Make-up Artist: Herself
+    </string>
+
 
 </resources>

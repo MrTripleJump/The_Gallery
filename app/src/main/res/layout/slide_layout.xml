@@ -5,38 +5,68 @@
 
 
     <ImageView
-        android:layout_marginTop="110dp"
-        android:layout_width="match_parent"
+        android:src="@drawable/photography"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/image_view" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:text="title"
         android:id="@+id/caption"
         android:textSize="18sp"
-        android:layout_below="@id/image_view"
         android:textColor="#FFFFFF"
         android:textAlignment="center"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/caption1"
-        android:layout_below="@id/image_view"
+        android:text="subtitle"
+        android:layout_below="@id/caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30sp"/>
+        android:layout_centerHorizontal="true"/>
 
-    <Button
+    <TextView
+        android:id="@+id/caption12"
+        android:text="pricing"
+        android:layout_below="@id/caption1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contact"
-        android:onClick="contact"
-        android:layout_alignParentBottom="true"/>
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:src="@drawable/email"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/image_view"
+        android:id="@id/contact"
+        android:onClick="contact"/>
 
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:src="@drawable/sharebutton"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/image_view"
+        android:id="@+id/share"
+        android:onClick="share"/>
 
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:src="@drawable/earthbutton"
+        android:layout_below="@id/image_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:id="@+id/website"
+        android:onClick="website"/>
 </RelativeLayout>

@@ -29,5 +29,17 @@ public class mainPage extends AppCompatActivity {
 
         });
 
+        ImageView profile2 = (ImageView) findViewById(R.id.imageView2);
+        profile2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent free2Intent = new Intent(context, Selection2.class);
+                startActivity(free2Intent);
+            }
+        });
+
     }
 }
+
+
+
