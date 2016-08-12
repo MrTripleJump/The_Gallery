@@ -45,4 +45,10 @@ public class PhotoActivity extends AppCompatActivity {
         sendIntent.setType("text/plain");
         startActivity(sendIntent);
     }
+
+    public void website (View target){
+        Intent website = new Intent(Intent.ACTION_VIEW, Uri.parse("https://sites.google.com/site/demitriusramirezportfolio/"));
+
+        startActivity(website);
+    }
 }

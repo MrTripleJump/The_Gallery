@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void website (View target){
-        Intent website = new Intent(Intent.ACTION_VIEW, Uri.parse("https://webflow.com/design/thegallery"));
+        Intent website = new Intent(Intent.ACTION_VIEW, Uri.parse("http://thegallery.webflow.io/"));
 
         startActivity(website);
     }

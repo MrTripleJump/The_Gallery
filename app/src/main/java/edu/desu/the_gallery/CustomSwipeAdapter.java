@@ -53,7 +53,6 @@ public class CustomSwipeAdapter extends PagerAdapter {
     public Object instantiateItem(ViewGroup container, int position) {
         TextView c;
         TextView cc;
-        TextView ccc;
         TextView cccc;
 
         layoutInflater = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
